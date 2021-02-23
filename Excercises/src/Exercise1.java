@@ -11,5 +11,6 @@ public class Exercise1 {
         System.out.println("Enter your name");
         String s = userImput.next();
         System.out.println("You have entered: " + a + "and your name is " + s);
+
     }
 }
