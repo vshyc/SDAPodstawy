@@ -8,17 +8,25 @@ public class ZadSlack1 {
         int a = userInput.nextInt();
         System.out.println("Enter second number:");
         int b = userInput.nextInt();
+        System.out.println("Enter an operation(+,-,*,/,pwr):");
+        String o = userInput.next();
 
-        int sum = a+b;
-        int d = a-b;
-        int e = a*b;
-        int f = a/b;
-        int pwr = (int) Math.pow(a,b);
-        System.out.println("dodawanie -> a = " +a +", b = " +b + " wynik to: " + sum);
-        System.out.println("odejmowanie -> a = " +a +", b = " +b + " wynik to: " + d);
-        System.out.println("mnożenie -> a = " +a +", b = " +b + " wynik to: " + e);
-        System.out.println("dzielenie -> a = " +a +", b = " +b + " wynik to: " + f);
-        System.out.println("podniesienie do potęgi -> a="+a + " podniesione do potęgi "+b + " daje wynik "+pwr);
+        if (o.equals("+")) {
+            int sum = a + b;
+            System.out.println("Wynik to: " + (a+b));
+        }else if (o.equals("-")) {
+            System.out.println("Wynik to: " + (a-b));
+        }else if (o.equals("*")) {
+            System.out.println("Wynik to: " + (a*b));
+        }else if (o.equals("/")) {
+            System.out.println("Wynik to: " + (a/b));
+        }else if (o.equals("pwr")){
+            System.out.println("Wynik to: " + (Math.pow(a,b)));
+        }else {
+            System.out.println("Błąd.");
+        }
+
+
 
     }
 }
