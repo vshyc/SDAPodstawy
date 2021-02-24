@@ -8,7 +8,7 @@ public class zadania4 {
             System.out.println(element);
         }
         System.out.println("The minimal value of table is:+");
-        }
+
 
 
     }
