@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ZadSlack1 {
+public class ZadSlack1dwa {
     public static void main(String[] args) {
 
         Scanner userInput = new Scanner(System.in);
@@ -11,23 +11,27 @@ public class ZadSlack1 {
         System.out.println("Enter an operation(+,-,*,/,pwr):");
         String o = userInput.next();
 
-        if (o.equals("+")) {
-            int sum = a + b;
+        switch (o) {
+            case "+":
             System.out.println("Wynik to: " + (a+b));
-        }else if (o.equals("-")) {
+                break;
+            case "-":
             System.out.println("Wynik to: " + (a-b));
-        }else if (o.equals("*")) {
+                break;
+            case "*":
             System.out.println("Wynik to: " + (a*b));
-        }else if (o.equals("/")) {
+                break;
+            case "/":
             System.out.println("Wynik to: " + (a/b));
-        }else if (o.equals("pwr")){
+                break;
+            case "pwr":
             System.out.println("Wynik to: " + (Math.pow(a,b)));
-        }else {
-            System.out.println("Błąd.");
+                break;
+            default:
+                System.out.println("Błąd");
         }
 
 
 
-    }
-}
+}}
 
